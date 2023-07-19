@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>REACT JS</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam minus ratione porro ducimus consectetur corporis quidem ab saepe possimus tenetur?</p>
+
+
+    <script>
+  ES6 
+let VariableName = 'VariableValue';
+VariableName = {};
+
+const personName = 'Kenny';
+//ES5 CONCATENATING 
+console.log('The name of this person is ' + personName);
+//ES6 CONCATENATING
+console.log(`The name of this person is ${personName}`)
+
+  //TERNARY OPERATION
+        const personNamee = {name: 'koki', name2: 'efi'};
+        const skinColor = 'black'
+         console.log(`The name of of this person is ${skinColor === 'black' ? personNamee.name : personNamee.name2} and is skin color is ${skinColor}`);
+
+//TERNARY OPERATION2
+        let result = '';
+        let age = 22;
+   // using if statement
+        if (age >= 21) {
+            result = 'You are eligible to drink'; 
+        }else{
+            result = 'You are not eligible to drink';
+        }
+        console.log(result);
+
+    //using ternary operation
+        result = (age >= 21) ? 'you are eligible to drink' : 'you are not eligible to drink';
+        console.log(result);
+
+    //TERNARY CHAIN OPERATION
+        result = (age >= 21) ? 'You are eligible to drink' : age >= 19 ? 'Age 19 can also drink' : 'You are not eligible to drink';
+
+
+        let personArray = [
+            {
+                name: 'john',
+                age: 21
+            },
+            {
+                name: 'Doe',
+                age: 18
+            },
+            {
+                name: 'jade',
+                age: 16
+            },
+        ];
+
+        let ageNum = 16;
+        console.log(personArray[0]); // i = 0
+        if (personArray[0].age > ageNum) {
+            console.log(personArray[0].name);
+        }
+
+        console.log(personArray[1]); // i = 0
+        if (personArray[0].age > ageNum) {
+            console.log(personArray[0].name);
+        }
+
+        console.log(personArray[2]); // i = 0
+        if (personArray[0].age > ageNum) {
+            console.log(personArray[0].name);
+        }
+
+    //forLOOP
+        function personName() {
+          for (let i = 0; i < personArray.length; i++)  {
+            if (personArray[i].age >= 16) {
+                console.log(name)
+            }
+          }
+        }
+    </script>
+</body>
+</html>
